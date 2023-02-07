@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutech Agency</title>
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b57389eff6.js" crossorigin="anonymous"></script>
+    <!-- Progress Bar -->
+    <script src="js/progressbar.min.js"></script>
+    <!-- Parallax -->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <!-- FancyBox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container" id="nav-container">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+                <a href="index.html" class="navbar-brand">
+                    <img id="logo" src="img/solutechagency_logo.svg" alt="Solutech Agency Logo">Solutech Agency
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" 
+                    aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <div class="navbar-nav">
+                        <a class="active nav-item nav-link" id="home-menu" href="#home">Home</a>
+                        <a class="nav-item nav-link" id="about-menu" href="#about-area">A agência</a>
+                        <a class="nav-item nav-link" id="services-menu" href="#services-area">Serviços</a>
+                        <a class="nav-item nav-link" id="team-menu" href="#team-area">Equipe</a>
+                        <a class="nav-item nav-link" id="portfolio-menu" href="#portfolio-area">Portfólio</a>
+                        <a class="nav-item nav-link" id="contact-menu" href="#contact-area">Contato</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Home -->
+        <section id="home"> 
+            <div class="container-fluid">
+                <div id="mainSlider" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+                        <li data-target="#mainSlider" data-slide-to="1"></li>
+                        <li data-target="#mainSlider" data-slide-to="2"></li>
+                    </ol> 
+                <div class="carousel-inner">
+                    <div class="carousel-item carousel-image bg-img-1 active">
+                        <div class="carousel-caption d-md-block" data-aos="zoom-out" data-aos-delay="400">
+                            <h2>Lorem ipsum dolor sit amet?</h2>
+                            <p>Donec fringilla magna sit amet quam condimentum, ut ultrices magna eleifend.</p>
+                            <a href="#portfolio-area" class="main-btn">Ver portfólio</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-image bg-img-2">
+                        <div class="carousel-caption d-md-block">
+                            <h2>Lorem ipsum dolor sit amet?</h2>
+                            <p>Donec fringilla magna sit amet quam condimentum, ut ultrices magna eleifend.</p>
+                            <a href="#contact-area" class="main-btn">Entre em contato</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item carousel-image bg-img-3">
+                        <div class="carousel-caption d-md-block">
+                            <h2>Lorem ipsum dolor sit amet?</h2>
+                            <p>Donec fringilla magna sit amet quam condimentum, ut ultrices magna eleifend.</p>
+                            <a href="#contact-area" class="main-btn">Entre em contato</a>
+                        </div>
+                    </div>
+                </div>
+                    <a href="#mainSlider" class="carousel-control-prev" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a href="#mainSlider" class="carousel-control-next" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>  
+        </section>
+        <!-- Sobre a empresa -->
+        <section id="about-area">
+            <div class="container" data-aos="fade-up">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="main-title">Sobre a Solutech Agency</h3>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-right">
+                        <img class="img-fluid" src="img/agency.jpg" alt="Agência Solutech">
+                    </div>
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="about-title">Sed consequat et quam a aliquet</h3>
+                        <p>Praesent molestie blandit metus, vel euismod nisi semper non. Proin malesuada nibh id mauris venenatis volutpat.</p>
+                        <p>Fusce semper sem dolor, et maximus velit ultrices ac. Morbi quis mi ac tortor sollicitudin porta quis pretium ligula.</p>
+                        <p>In vulputate erat vel ipsum viverra varius.</p>
+                        <p>Nam nec lacus sollicitudin, lacinia augue et, tincidunt ex:</p>
+                        <ul id="about-list">
+                            <li><i class="fa-solid fa-check"></i> Donec molestie felis at eros volutpat.</li>
+                            <li><i class="fa-solid fa-check"></i> Praesent luctus nibh sit amet turpis iaculis.</li>
+                            <li><i class="fa-solid fa-check"></i> Cras ullamcorper ante ac aliquet pretium.</li>
+                            <li><i class="fa-solid fa-check"></i> Sed hendrerit massa non quam dictum eleifend.</li>
+                            <li><i class="fa-solid fa-check"></i> Cras sagittis turpis et arcu iaculis ullamcorper.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <!-- Serviços da empresa -->
+            <section id="services-area">
+                <div class="container" data-aos="fade-up">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title">Nossos serviços</h3>
+                        </div>
+                        <div class="col-md-4 service-box" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fas fa-mobile-alt"></i>
+                            <h4>Aplicativos Mobile</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a aliquam augue, vel posuere sem.</p>
+                        </div>
+                        <div class="col-md-4 service-box" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fas fa-shopping-cart"></i>
+                            <h4>E-commerce</h4>
+                            <p>Nullam malesuada purus in turpis mattis, vulputate condimentum dui finibus.</p>
+                        </div>
+                        <div class="col-md-4 service-box" data-aos="fade-up" data-aos-delay="100">
+                            <i class="fas fa-paint-brush"></i>
+                            <h4>Design</h4>
+                            <p>Nunc nec nunc ligula. Praesent bibendum velit eu felis mollis, nec varius enim hendrerit.</p>
+                        </div>
+                        <div class="col-md-4 service-box" data-aos="fade-up" data-aos-delay="400">
+                            <i class="fab fa-google"></i>
+                            <h4>SEO</h4>
+                            <p>Nam a scelerisque nunc. Quisque ac ornare nulla, semper euismod lectus.</p>
+                        </div>
+                        <div class="col-md-4 service-box" data-aos="fade-up" data-aos-delay="400">
+                            <i class="fas fa-hands-helping"></i>
+                            <h4>Suporte 24h</h4>
+                            <p>Ut facilisis pharetra magna imperdiet molestie. Integer eu laoreet velit, eu molestie sapien.</p>
+                        </div>
+                        <div class="col-md-4 service-box" data-aos="fade-up" data-aos-delay="400">
+                            <i class="fas fa-server"></i>
+                            <h4>Hospedagem</h4>
+                            <p>Integer id nisl mauris. Fusce in arcu vel nulla sollicitudin varius in non neque.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Dados da empresa -->
+            <section id="data-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 circle-box">
+                            <div id="circleA"></div>
+                            <p>Projetos entregues</p>
+                        </div>
+                        <div class="col-md-3 circle-box">
+                            <div id="circleB"></div>
+                            <p>Clientes</p>
+                        </div>
+                        <div class="col-md-3 circle-box">
+                            <div id="circleC"></div>
+                            <p>Colaboradores</p>
+                        </div>
+                        <div class="col-md-3 circle-box">
+                            <div id="circleD"></div>
+                            <p>Cafezinhos</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Equipe -->
+            <section id="team-area">
+                <div class="container" data-aos="fade-up">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title">Nossa equipe</h3>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" data-aos="fade-up" data-aos-delay="600">
+                                <img src="img/profile1.jpg" class="card-img-top" alt="Imagem de perfil 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mary Smith</h5>
+                                    <p class="card-text">Software Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" data-aos="fade-up" data-aos-delay="600">
+                                <img src="img/profile2.jpg" class="card-img-top" alt="Imagem de perfil 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Olivia Johnson</h5>
+                                    <p class="card-text">SEO Consultant</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" data-aos="fade-up" data-aos-delay="600">
+                                <img src="img/profile3.jpg" class="card-img-top" alt="Imagem de perfil 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Jessica Rodriguez</h5>
+                                    <p class="card-text">Project Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card" data-aos="fade-up" data-aos-delay="600">
+                                <img src="img/profile4.jpg" class="card-img-top" alt="Imagem de perfil 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Jake Wilson</h5>
+                                    <p class="card-text">UX/UI Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Trabalhe conosco -->
+            <section id="apply-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 apply-box" id="working-img"></div>
+                        <div class="col-md-6 apply-box" id="pattern-img">
+                            <div data-aos="fade-up">
+                            <h4>Lorem ipsum dolor sit amet?</h4>
+                            <p>In malesuada viverra erat, non ultrices purus maximus quis.</p>
+                            <p>Pellentesque ante eros, mollis in nunc vel, efficitur lacinia mauris.</p>
+                            <p>Nam ullamcorper urna nec lorem luctus venenatis.</p>
+                            <a href="#contact-area" class="main-btn" id="apply-btn">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Portfólio -->
+            <section id="portfolio-area">
+                <div class="container" data-aos="fade-up">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="main-title">Portfólio</h3>
+                        </div>
+                        <div class="col-md-12" id="filter-btn-box">
+                            <button class="main-btn filter-btn active" id="all-btn">Todos</button>
+                            <button class="main-btn filter-btn" id="web-btn">Web</button>
+                            <button class="main-btn filter-btn" id="mobile-btn">Mobile</button>
+                            <button class="main-btn filter-btn" id="commerce-btn">E-commerce</button>
+                        </div>
+                        <div class="col-md-4 project-box web" data-aos="fade-up" data-aos-delay="400">
+                            <a href="img/proj1.jpg" data-fancybox>
+                                <img src="img/proj1.jpg" class="img-fluid" alt="Projeto 1">
+                            </a>
+                        </div>
+                        <div class="col-md-4 project-box mobile" data-aos="fade-up" data-aos-delay="400">
+                            <a href="img/proj2.png" data-fancybox>
+                                <img src="img/proj2.png" class="img-fluid" alt="Projeto 2">
+                            </a>
+                        </div>
+                        <div class="col-md-4 project-box commerce" data-aos="fade-up" data-aos-delay="400">
+                            <a href="img/proj3.png" data-fancybox> 
+                                <img src="img/proj3.png" class="img-fluid" alt="Projeto 3">
+                            </a>
+                        </div>
+                        <div class="col-md-4 project-box web" data-aos="fade-up" data-aos-delay="400">
+                            <a href="img/proj4.jpg" data-fancybox> 
+                                <img src="img/proj4.jpg" class="img-fluid" alt="Projeto 4">
+                            </a>
+                        </div>
+                        <div class="col-md-4 project-box mobile" data-aos="fade-up" data-aos-delay="400">
+                            <a href="img/proj5.png" data-fancybox> 
+                                <img src="img/proj5.png" class="img-fluid" alt="Projeto 5">
+                            </a>
+                        </div>
+                        <div class="col-md-4 project-box commerce" data-aos="fade-up" data-aos-delay="400">
+                            <a href="img/proj6.png" data-fancybox> 
+                                <img src="img/proj6.png" class="img-fluid" alt="Projeto 6">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Newsletter -->
+            <section id="news-area">
+                <div class="container">
+                    <div class="col-md-12" data-aos="fade-up">
+                        <h3 class="main-title">Fique por dentro das novidades</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id porttitor enim, eu aliquam sapien.</p>
+                    <form action="">
+                        <input type="email" class="form-control" id="email-input" name="email" placeholder="Seu melhor e-mail">
+                        <input type="submit" id="news-btn" value="Inscrever">
+                    </form>
+                </div>
+            </section>
+            <!-- Call to action -->
+            <section id="call-area">
+                <div class="container">
+                    <div class="row">
+                        <p>Deseja fazer um orçamento sem compromisso?</p>
+                        <button class="main-btn" id="call-btn">Fazer Orçamento</button>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <!-- Rodapé -->
+    <footer>
+        <section id="contact-area">
+            <div class="container" >
+                <div class="row">
+                    <div class="col-md-12" data-aos="fade-up">
+                        <h3 class="main-title">Entre em contato conosco</h3>
+                    </div>
+                    <div class="col-md-4 contact-box" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fas fa-phone"></i>
+                        <p><span class="contact-title">Ligue para:</span> (71) 00000-0000</p>
+                        <p><span class="contact-title">Horário:</span> Das 8h às 18h</p>
+                    </div>
+                    <div class="col-md-4 contact-box" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fas fa-envelope"></i>
+                        <p><span class="contact-title">Envie um e-mail:</span> contato@solutechagency.com.br</p>
+                    </div>
+                    <div class="col-md-4 contact-box" data-aos="fade-up" data-aos-delay="400">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p><span class="contact-title">Localização:</span> Rua Lorem Ipsum - 0000</p>
+                    </div>
+                    <div class="col-md-6" id="msg-box" data-aos="fade-right" data-aos-delay="440">
+                        <p>Deixe sua mensagem:</p>
+                    </div>
+                    <div class="col-md-6" id="contact-form" data-aos="fade-left" data-aos-delay="440">
+                        <form action="">
+                            <input type="email" class="form-control" placeholder="E-mail" name="email">
+                            <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                            <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
+                            <input type="submit" class="main-btn" value="Enviar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="copy-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Desenvolvido por <a href="index.html">Solutech Agency</a> &copy; 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <a href="#" class="back-to-top"><i class="fa-solid fa-angle-up"></i></a>
+
+    <!-- Whatsapp -->
+    <a href="" target="_blank" class="js-btn-fixed-bottom btn-whatsapp" aria-label="Fale conosco pelo WhatsApp">
+        <svg class="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
