@@ -163,6 +163,7 @@ $(document).ready(function() {
 
     $(navBtn).click(function() {
 
+        $('.navbar-collapse').collapse('hide');
         let btnId = $(this).attr('id');
 
         if(btnId == 'about-menu') {
@@ -217,12 +218,10 @@ $(document).ready(function() {
     function aos_init() {
         AOS.init({
         duration: 1000,
-        once: true
+        once: true       
         });
     }
     $(window).on('load', function() {
-        aos_init();
+        aos_init();  
     });
-
 });
-
